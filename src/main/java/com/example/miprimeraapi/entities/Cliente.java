@@ -13,4 +13,7 @@ import java.io.Serializable;
 @Table(name = "clientes")
 @Builder
 public class Cliente extends Persona implements Serializable{
+    public Cliente() {
+
+    }
 }
