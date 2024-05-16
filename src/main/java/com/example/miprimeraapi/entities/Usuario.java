@@ -1,13 +1,24 @@
 package com.example.miprimeraapi.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "usuario")
-public class Usuario {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+@Table(name = "usuarios")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class Usuario extends Base{
+
+    @Column(name = "auth_id")
     private String auth0Id;
 
+    @Column(name = "user_name")
     private String userName;
 }

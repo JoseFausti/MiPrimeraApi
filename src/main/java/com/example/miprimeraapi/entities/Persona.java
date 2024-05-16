@@ -4,24 +4,23 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
 
-@Entity
-@Table(name = "personas")
+@MappedSuperclass
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@SuperBuilder
-@Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Persona implements Serializable {
+public abstract class Persona extends Base implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected Long id;
     protected String nombre;
     protected String apellido;
     protected Integer edad;
+
+    @OneToOne
+    protected Imagen imagenPersona;
+
+    @OneToOne
+    protected Usuario usuario;
 
 }
