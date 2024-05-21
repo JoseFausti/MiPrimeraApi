@@ -24,7 +24,7 @@ public class Provincia {
     @Column(name = "nombre")
     private String nombre;
 
-    @OneToMany(mappedBy = "provincia")
+    @OneToMany(mappedBy = "provincia",orphanRemoval = true)
     private List<Localidad>localidades = new ArrayList<Localidad>();
 
     @ManyToOne(cascade = CascadeType.PERSIST)

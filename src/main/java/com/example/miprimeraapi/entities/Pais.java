@@ -24,6 +24,6 @@ public class Pais {
     @Column(name = "nombre")
     private String nombre;
 
-    @OneToMany(mappedBy = "pais")
+    @OneToMany(mappedBy = "pais",orphanRemoval = true)
     private List<Provincia>provincias = new ArrayList<Provincia>();
 }
