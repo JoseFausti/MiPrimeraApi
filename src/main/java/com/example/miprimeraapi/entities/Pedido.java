@@ -1,8 +1,8 @@
-package com.example.miprimeraapi.entities;
+package com.example.miPrimeraApi.entities;
 
-import com.example.miprimeraapi.entities.enums.Estado;
-import com.example.miprimeraapi.entities.enums.FormaPago;
-import com.example.miprimeraapi.entities.enums.TipoEnvio;
+import com.example.miPrimeraApi.entities.enums.Estado;
+import com.example.miPrimeraApi.entities.enums.FormaPago;
+import com.example.miPrimeraApi.entities.enums.TipoEnvio;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

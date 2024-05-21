@@ -1,4 +1,4 @@
-package com.example.miprimeraapi.entities.enums;
+package com.example.miPrimeraApi.entities.enums;
 
 public enum FormaPago {
     EFECTIVO,

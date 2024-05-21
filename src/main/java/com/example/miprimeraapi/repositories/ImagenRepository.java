@@ -1,9 +1,9 @@
-package com.example.miprimeraapi.repositories;
+package com.example.miPrimeraApi.repositories;
 
-import com.example.miprimeraapi.entities.Imagen;
+import com.example.miPrimeraApi.entities.Imagen;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ImagenRepository extends JpaRepository<Imagen, Long> {
+public interface ImagenRepository extends BaseRepository<Imagen, Long> {
 }

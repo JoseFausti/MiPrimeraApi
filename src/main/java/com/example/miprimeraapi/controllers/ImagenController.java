@@ -1,7 +1,7 @@
-package com.example.miprimeraapi.controllers;
+package com.example.miPrimeraApi.controllers;
 
-import com.example.miprimeraapi.entities.Imagen;
-import com.example.miprimeraapi.services.ImagenService;
+import com.example.miPrimeraApi.entities.Imagen;
+import com.example.miPrimeraApi.services.ImagenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

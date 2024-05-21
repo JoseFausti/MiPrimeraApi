@@ -1,4 +1,4 @@
-package com.example.miprimeraapi.entities;
+package com.example.miPrimeraApi.entities;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +18,6 @@ import java.io.Serializable;
 @SuperBuilder
 public abstract class Base implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     protected Long id;
 }

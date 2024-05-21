@@ -1,4 +1,4 @@
-package com.example.miprimeraapi.entities;
+package com.example.miPrimeraApi.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -11,11 +11,13 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public abstract class Persona extends Base implements Serializable {
+public abstract class Persona extends Base {
 
     protected String nombre;
     protected String apellido;
-    protected Integer edad;
+    protected String telefono;
+    protected String email;
+    protected String fechaNacimiento;
 
     @OneToOne
     protected Imagen imagenPersona;

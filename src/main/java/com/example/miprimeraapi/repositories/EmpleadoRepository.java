@@ -1,9 +1,9 @@
-package com.example.miprimeraapi.repositories;
+package com.example.miPrimeraApi.repositories;
 
-import com.example.miprimeraapi.entities.Empleado;
+import com.example.miPrimeraApi.entities.Empleado;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EmpleadoRepository extends JpaRepository<Empleado, Long> {
+public interface EmpleadoRepository extends BaseRepository<Empleado, Long> {
 }

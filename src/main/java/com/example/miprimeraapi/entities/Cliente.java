@@ -1,4 +1,4 @@
-package com.example.miprimeraapi.entities;
+package com.example.miPrimeraApi.entities;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;

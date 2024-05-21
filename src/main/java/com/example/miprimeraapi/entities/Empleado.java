@@ -1,6 +1,6 @@
-package com.example.miprimeraapi.entities;
+package com.example.miPrimeraApi.entities;
 
-import com.example.miprimeraapi.entities.enums.TipoEmpleado;
+import com.example.miPrimeraApi.entities.enums.TipoEmpleado;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
