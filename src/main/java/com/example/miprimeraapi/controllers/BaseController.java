@@ -1,7 +1,7 @@
-package com.example.miPrimeraApi.controllers;
+package com.example.miprimeraapi.controllers;
 
-import com.example.miPrimeraApi.entities.Base;
-import com.example.miPrimeraApi.services.BaseService;
+import com.example.miprimeraapi.entities.Base;
+import com.example.miprimeraapi.services.BaseService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

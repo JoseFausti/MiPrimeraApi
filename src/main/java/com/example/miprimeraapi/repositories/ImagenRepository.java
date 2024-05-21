@@ -1,6 +1,6 @@
-package com.example.miPrimeraApi.repositories;
+package com.example.miprimeraapi.repositories;
 
-import com.example.miPrimeraApi.entities.Imagen;
+import com.example.miprimeraapi.entities.Imagen;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

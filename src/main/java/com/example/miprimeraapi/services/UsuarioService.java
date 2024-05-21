@@ -1,7 +1,7 @@
-package com.example.miPrimeraApi.services;
+package com.example.miprimeraapi.services;
 
-import com.example.miPrimeraApi.entities.Usuario;
-import com.example.miPrimeraApi.repositories.UsuarioRepository;
+import com.example.miprimeraapi.entities.Usuario;
+import com.example.miprimeraapi.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

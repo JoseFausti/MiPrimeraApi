@@ -1,7 +1,7 @@
-package com.example.miPrimeraApi.services;
+package com.example.miprimeraapi.services;
 
-import com.example.miPrimeraApi.entities.Imagen;
-import com.example.miPrimeraApi.repositories.ImagenRepository;
+import com.example.miprimeraapi.entities.Imagen;
+import com.example.miprimeraapi.repositories.ImagenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

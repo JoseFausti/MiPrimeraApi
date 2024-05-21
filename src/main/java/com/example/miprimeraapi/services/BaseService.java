@@ -1,7 +1,7 @@
-package com.example.miPrimeraApi.services;
+package com.example.miprimeraapi.services;
 
-import com.example.miPrimeraApi.entities.Base;
-import com.example.miPrimeraApi.repositories.BaseRepository;
+import com.example.miprimeraapi.entities.Base;
+import com.example.miprimeraapi.repositories.BaseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.Serializable;

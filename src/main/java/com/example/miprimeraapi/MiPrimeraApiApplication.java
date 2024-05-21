@@ -1,6 +1,6 @@
-package com.example.miPrimeraApi;
+package com.example.miprimeraapi;
 
-import com.example.miPrimeraApi.entities.Empleado;
+import com.example.miprimeraapi.entities.Empleado;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,7 +1,7 @@
-package com.example.miPrimeraApi.controllers;
+package com.example.miprimeraapi.controllers;
 
-import com.example.miPrimeraApi.entities.Cliente;
-import com.example.miPrimeraApi.services.ClienteService;
+import com.example.miprimeraapi.entities.Cliente;
+import com.example.miprimeraapi.services.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

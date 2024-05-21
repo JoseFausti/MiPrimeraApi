@@ -1,4 +1,4 @@
-package com.example.miPrimeraApi.entities.enums;
+package com.example.miprimeraapi.entities.enums;
 
 public enum Estado {
     PREPARACION,

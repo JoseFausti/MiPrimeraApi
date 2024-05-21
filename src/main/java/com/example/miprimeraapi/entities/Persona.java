@@ -1,4 +1,4 @@
-package com.example.miPrimeraApi.entities;
+package com.example.miprimeraapi.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

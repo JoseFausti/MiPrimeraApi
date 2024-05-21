@@ -1,7 +1,7 @@
-package com.example.miPrimeraApi.controllers;
+package com.example.miprimeraapi.controllers;
 
-import com.example.miPrimeraApi.entities.Usuario;
-import com.example.miPrimeraApi.services.UsuarioService;
+import com.example.miprimeraapi.entities.Usuario;
+import com.example.miprimeraapi.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
