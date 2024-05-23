@@ -11,6 +11,8 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "pedidos")
@@ -35,8 +37,18 @@ public class Pedido extends Base{
     @Column(name = "fecha_pedido")
     private LocalDate fechaPedido;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "domicilio_id")
+    private Domicilio domicilio;
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "sucursal_id")
+    private Sucursal sucursal;
+
+    @OneToMany(mappedBy = "pedido",cascade = CascadeType.PERSIST,orphanRemoval = true)
+    private List<DetallePedido> detallePedidos = new ArrayList<DetallePedido>();
 }

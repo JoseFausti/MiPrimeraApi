@@ -6,28 +6,23 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
-@Table(name = "pais")
+@Table(name = "usuario_cliente")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Pais {
-
+public class UsuarioCliente {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "nombre")
-    private String nombre;
+    @Column(name = "autho_id")
+    private String authOId;
 
-    /*
+    @Column(name = "username")
+    private String username;
 
-    @OneToMany(mappedBy = "pais",orphanRemoval = true)
-    private List<Provincia>provincias = new ArrayList<Provincia>();
-
-     */
+    @OneToOne(mappedBy = "usuario_cliente")
+    private Cliente cliente;
 }

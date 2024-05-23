@@ -24,8 +24,13 @@ public class Localidad {
     @Column(name = "nombre")
     private String nombre;
 
+    /*
+    Bidireccional:
+
     @OneToMany(mappedBy = "localidad",orphanRemoval = true)
     private List<Domicilio> domicilios = new ArrayList<Domicilio>();
+
+     */
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "fk_provincia")

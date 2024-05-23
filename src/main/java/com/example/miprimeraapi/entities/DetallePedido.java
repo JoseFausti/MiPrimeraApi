@@ -6,32 +6,25 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
-@Table(name = "pais")
+@Table(name = "detalle_pedido")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Provincia {
+public class DetallePedido {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "nombre")
-    private String nombre;
+    @Column(name = "cantidad")
+    private Integer cantidad;
 
-    /*
-
-    @OneToMany(mappedBy = "provincia",orphanRemoval = true)
-    private List<Localidad>localidades = new ArrayList<Localidad>();
-
-     */
+    @Column(name = "subtotal")
+    private Double subtotal;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "fk_pais")
-    private Pais pais;
+    @JoinColumn(name = "pedido_id")
+    private Pedido pedido;
 }

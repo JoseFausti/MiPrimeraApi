@@ -6,17 +6,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
-@Table(name = "pais")
+@Table(name = "empresa")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Provincia {
-
+public class Empresa {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -24,14 +20,10 @@ public class Provincia {
     @Column(name = "nombre")
     private String nombre;
 
-    /*
+    @Column(name = "razon_social")
+    private String razonSocial;
 
-    @OneToMany(mappedBy = "provincia",orphanRemoval = true)
-    private List<Localidad>localidades = new ArrayList<Localidad>();
+    @Column(name = "cuil")
+    private int cuil;
 
-     */
-
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "fk_pais")
-    private Pais pais;
 }
