@@ -18,31 +18,51 @@ public abstract class BaseController<E extends Base, ID extends Serializable> {
     }
 
     @GetMapping()
-    public ResponseEntity<List<E>> listar(){
-        List<E> entities = service.listar();
-        return ResponseEntity.ok(entities);
+    public ResponseEntity<List<E>> listar() throws Exception{
+        try {
+            List<E> entities = service.listar();
+            return ResponseEntity.ok(entities);
+        }catch (Exception ex){
+            throw new Exception(ex.getMessage());
+        }
     }
 
     @GetMapping("/{id}")
-    public Optional<E> buscarPorId(@PathVariable ID id){
-        return service.buscarPorId(id);
+    public Optional<E> buscarPorId(@PathVariable ID id)throws Exception{
+        try {
+            return service.buscarPorId(id);
+        }catch (Exception ex){
+            throw new Exception(ex.getMessage());
+        }
     }
 
     @PostMapping()
-    public ResponseEntity<E> crear(@RequestBody E entity) {
-        E entidadCreada = service.crear(entity);
-        return ResponseEntity.ok(entidadCreada);
+    public ResponseEntity<E> crear(@RequestBody E entity) throws Exception{
+        try {
+            E entidadCreada = service.crear(entity);
+            return ResponseEntity.ok(entidadCreada);
+        }catch (Exception ex){
+            throw new Exception(ex.getMessage());
+        }
     }
 
     @PutMapping()
-    public ResponseEntity<E> actualizar(@RequestBody E entity) {
-        E entidadAct = service.actualizar(entity);
-        return ResponseEntity.ok(entidadAct);
+    public ResponseEntity<E> actualizar(@RequestBody E entity)throws Exception{
+        try {
+            E entidadAct = service.actualizar(entity);
+            return ResponseEntity.ok(entidadAct);
+        }catch (Exception ex){
+            throw new Exception(ex.getMessage());
+        }
     }
 
     @DeleteMapping("/{id}")
-    public void eliminar(@PathVariable ID id) {
-        service.eliminar(id);
+    public void eliminar(@PathVariable ID id)throws Exception{
+        try {
+            service.eliminar(id);
+        }catch (Exception ex){
+            throw new Exception(ex.getMessage());
+        }
     }
 
 }
