@@ -13,7 +13,6 @@ public abstract class BaseService<E extends Base, ID extends Serializable> {
 
     protected BaseRepository<E, ID> baseRepository;
 
-    @Transactional
     public BaseService(BaseRepository<E, ID> baseRepository){
         this.baseRepository = baseRepository;
     }
